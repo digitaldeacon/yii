@@ -113,7 +113,7 @@ class CWidget extends CBaseController
 		if($this->_id!==null)
 			return $this->_id;
 		elseif($autoGenerate)
-			return $this->_id='yw-'.str_replace('.', '-', uniqid('', true));
+			return $this->_id='yw'.str_replace('.', '', uniqid('', true));
 	}
 
 	/**
